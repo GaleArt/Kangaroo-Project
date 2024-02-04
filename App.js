@@ -5,7 +5,6 @@ import {
 	SafeAreaView,
 	StyleSheet,
 	Text,
-	TextInput,
 	TouchableOpacity,
 } from 'react-native'
 
@@ -28,7 +27,6 @@ export default function App() {
 				<Header></Header>
 				<AddTodo></AddTodo>
 
-				<TextInput style={styles.input} placeholder='Шо добавить...' />
 				<TouchableOpacity onPress={handleTestPress} style={styles.button}>
 					<Text style={{ fontSize: 20 }}>Кнопка</Text>
 				</TouchableOpacity>
