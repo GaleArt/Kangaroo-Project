@@ -28,7 +28,7 @@ export default function AddTodo() {
 				style={styles.input}
 			/>
 			<TouchableOpacity style={styles.button} onPress={handleSubmit}>
-				<Text style={{ fontSize: 20 }}>Добавить</Text>
+				<Text style={styles.buttonText}>Добавить</Text>
 			</TouchableOpacity>
 		</View>
 	)
@@ -44,10 +44,12 @@ const styles = StyleSheet.create({
 		alignSelf: 'center',
 		backgroundColor: 'white',
 		color: 'black',
-		textAlign: 'center',
-		fontSize: 20,
-		margin: 5,
-		width: 250,
+		textAlign: 'left',
+		paddingHorizontal: 12,
+		fontSize: 18,
+		marginVertical: 10,
+		marginHorizontal: 5,
+		width: 270,
 		height: 40,
 		borderRadius: 10,
 	},
@@ -56,12 +58,15 @@ const styles = StyleSheet.create({
 		alignSelf: 'center',
 		justifyContent: 'center',
 		alignItems: 'center',
-		backgroundColor: '#f6f676',
-		color: 'black',
-		width: 120,
+		backgroundColor: '#fffc3c',
+		width: 100,
 		height: 40,
-		fontSize: 20,
 		borderRadius: 10,
-		margin: 5,
+		marginVertical: 10,
+		marginHorizontal: 5,
+	},
+	buttonText: {
+		fontSize: 18,
+		color: 'black',
 	},
 })
