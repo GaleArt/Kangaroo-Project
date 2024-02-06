@@ -1,22 +1,16 @@
 import { StatusBar } from 'expo-status-bar'
 import {
-	Alert,
 	ImageBackground,
 	SafeAreaView,
 	StyleSheet,
 	Text,
-	TouchableOpacity,
+	TouchableOpacity
 } from 'react-native'
 
 import AddTodo from './components/AddTodo'
 import Header from './components/Header'
 
 export default function App() {
-	const handleTestPress = () =>
-		Alert.alert('Kangaroo', 'YA RODILSA?', [
-			{ text: 'DA', onPress: () => console.log('ON RODILSA') },
-			{ text: 'NE', onPress: () => console.log('ON NE RODILSA') },
-		])
 
 	return (
 		<SafeAreaView style={styles.container}>
@@ -26,10 +20,6 @@ export default function App() {
 			>
 				<Header></Header>
 				<AddTodo></AddTodo>
-
-				<TouchableOpacity onPress={handleTestPress} style={styles.button}>
-					<Text style={{ fontSize: 20 }}>Кнопка</Text>
-				</TouchableOpacity>
 
 				<StatusBar style='auto' />
 			</ImageBackground>

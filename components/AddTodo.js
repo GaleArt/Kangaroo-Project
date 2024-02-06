@@ -21,7 +21,7 @@ export default function AddTodo() {
 	}
 
 	return (
-		<View style={styles.todo}>
+		<View style={styles.addTodo}>
 			<TextInput
 				placeholder='Шо добавить...'
 				onChangeText={e => setTitle(e.target.value)}
@@ -35,7 +35,7 @@ export default function AddTodo() {
 }
 
 const styles = StyleSheet.create({
-	todo: {
+	addTodo: {
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'space-between',
